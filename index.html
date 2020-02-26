@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,185 +9,271 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
+  </head>
+
+  <body>
     <div class="navbar navbar-default n-header" role="navigation">
-        <div class="container-fluid n-header-wrapper">
-            <a href="" class="navbar-brand logo">
-                <img src="img/logo2.jpg" alt="班级信息管理系统">
-            </a>
-            <div class="navbar-wrapper">
-                <ul class="nav navbar-nav nav-items">
-                    <li>
-                        <a class="nav-item" href="#" data-toggle="modal" data-target="#infoModal">
-                            <span>消息</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-item" href="#" data-toggle="modal" data-target="#setModal">
-                            <span>设置</span>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a class="nav-item dropdown-toggle" href="#" data-toggle="dropdown">
-                            <span>安全退出</span>
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu dropdown-position">
-                            <li>
-                                <a href="login.html">退出</a>
-                            </li>
-                            <li>
-                                <a href="#">注销</a>
-                            </li>
-                            <li>
-                                <a href="#">切换账号</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">帮助</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- 消息Modal -->
-    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="infoModalLabel">站内信</h4>
-                </div>
-        <div class="modal-body">
-            <ul>
-                <li>
-                    <a href="#">【系统消息】您已被选中花呗免还款！</a>
+      <div class="container-fluid n-header-wrapper">
+        <a href="" class="navbar-brand logo">
+          <img src="img/logo2.jpg" alt="班级信息管理系统">
+        </a>
+        <div class="navbar-wrapper">
+          <ul class="nav navbar-nav nav-items">
+            <li>
+              <a class="nav-item" href="#" data-toggle="modal" data-target="#infoModal">
+                <span>消息</span>
+              </a>
             </li>
-            <li>【系统消息】您已被选中信用卡免还款！</li>
-            <li>【警方提示】勿信虚假消息！</li>
+            <li>
+              <a class="nav-item" href="#" data-toggle="modal" data-target="#setModal">
+                <span>设置</span>
+              </a>
+            </li>
+            <li class="dropdown">
+              <a class="nav-item dropdown-toggle" href="#" data-toggle="dropdown">
+                <span>安全退出</span>
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu dropdown-position">
+                <li>
+                  <a href="login.html">退出</a>
+                </li>
+                <li>
+                  <a href="#">注销</a>
+                </li>
+                <li>
+                  <a href="#">切换账号</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">帮助</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
-        <div class="modal-footer">
+      </div>
+    </div>
+    <!-- 设置Modal -->
+    <div class="modal fade" id="setModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="setModalLabel">系统设置</h4>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li><input type="checkbox" name="" id=""></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</div>
-<!-- 设置Modal -->
-<div class="modal fade" id="setModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="setModalLabel">系统设置</h4>
+    <div style="clear: both;"></div>
+    <div class="container-fluid main-content">
+      <div class="row main-row">
+        <div class="col-md-2 col-lg-2 left">
+          <div class="current-user">
+            <span>当前用户：</span>
+            <span class="uname">Admin</span>
+          </div>
+          <div class="class">
+            <ul class="class-list">
+              <li>1班</li>
+              <li>2班</li>
+            </ul>
+          </div>
         </div>
-        <div class="modal-body">
-          <ul>
-              <li><input type="checkbox" name="" id=""></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-    </div>
-</div>
-</div>
-<div style="clear: both;"></div>
-<div class="container-fluid main-content">
-        <div class="row main-row">
-            <div class="col-md-2 col-lg-2 left">
-                <div class="current-user">
-                    <span>当前用户：</span>
-                    <span class="uname">Admin</span>
-                </div>
-                <div class="class">
-                    <ul class="class-list">
-                        <li>1班</li>
-                        <li>2班</li>
-                    </ul>
-                </div>
+        <div class="col-md-10 col-lg-10 right">
+          <div class="right-content">
+            <!-- 头部 -->
+            <div class="right-header">
+              <span>当前: 首页-</span>
+              <span class="right-class">01班</span>
             </div>
-            <div class="col-md-10 col-lg-10 right">
-                <div class="right-content">
-                  <!-- 头部 -->
-                  <div class="right-header">
-                    <span>当前: 首页-</span>
-                    <span class="right-class">01班</span>
+            <!-- 班级和搜索框 -->
+            <div class="right-info">
+              <div class="col-md-8">
+                <span class="right-class">01班</span>
+              </div>
+              <div class="col-md-4">
+                <div class="searchBox fr">
+                  <div class="searchInput fl">
+                    <input type="text" placeholder="用户名">
                   </div>
-                  <!-- 班级和搜索框 -->
-                  <div class="right-info">
-                    <div class="col-md-8">
-                      <span class="right-class">01班</span>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="searchBox fr">
-                        <div class="searchInput fl">
-                          <input type="text" placeholder="用户名">
-                        </div>
-                        <div class="searchBtn fl">
-                          <input type="submit">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 按钮组 -->
-                  <div class="col-md-12">
-                    <div class="right-btns">
-                      <button class="btn btn-info">添加</button>
-                      <button class="btn btn-primary">编辑</button>
-                      <button class="btn btn-danger">删除</button>
-                      <button class="btn btn-success">账号授权</button>
-                    </div>
-                  </div>
-                  <!-- 学生信息 -->
-                  <div class="col-md-12">
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th style="width: 2%;">
-                            <input type="checkbox">
-                          </th>
-                          <th style="width: 10%;">姓名</th>
-                          <th style="width: 10%;">学号</th>
-                          <th style="width: 15%;">手机号</th>
-                          <th style="width: 8%;">性别</th>
-                          <th style="width: 8%;">年龄</th>
-                          <th style="width: 20%;">专业</th>
-                          <th style="width: 27%;">操作</th>
-                        </tr>
-                      </thead>
-                      <tbody class="student-info">
-                        <tr>
-                          <td><input type="checkbox" name="" id=""></td>
-                          <td>张三丰</td>
-                          <td>001</td>
-                          <td>189999999</td>
-                          <td>男</td>
-                          <td>18</td>
-                          <td>移动应用开发</td>
-                          <td>
-                            <button class="btn btn-info">编辑</button>
-                            <button class="btn btn-danger">删除</button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="searchBtn fl">
+                    <input type="submit">
                   </div>
                 </div>
               </div>
+            </div>
+            <!-- 按钮组 -->
+            <div class="col-md-12">
+              <div class="right-btns">
+                <button class="btn btn-info">添加</button>
+                <button class="btn btn-primary">编辑</button>
+                <button class="btn btn-danger">删除</button>
+                <button class="btn btn-success">账号授权</button>
+              </div>
+            </div>
+            <!-- 学生信息 -->
+            <div class="col-md-12">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th style="width: 2%;">
+                      <input type="checkbox" class="all">
+                    </th>
+                    <th style="width: 10%;">姓名</th>
+                    <th style="width: 10%;">学号</th>
+                    <th style="width: 15%;">手机号</th>
+                    <th style="width: 8%;">性别</th>
+                    <th style="width: 8%;">年龄</th>
+                    <th style="width: 20%;">专业</th>
+                    <th style="width: 27%;">操作</th>
+                  </tr>
+                </thead>
+                <tbody class="student-info">
+                  <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>张三丰</td>
+                    <td>001</td>
+                    <td>189999999</td>
+                    <td>男</td>
+                    <td>18</td>
+                    <td>移动应用开发</td>
+                    <td>
+                      <button class="btn btn-info">编辑</button>
+                      <button class="btn btn-danger">删除</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-<script src="js/Jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/json.js"></script>
-<script src="js/ls.js"></script>
-<script src="js/index.js"></script>
+    <!-- 消息Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="infoModalLabel">站内信</h4>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>
+                <a href="#">【系统消息】您已被选中花呗免还款！</a>
+              </li>
+              <li>【系统消息】您已被选中信用卡免还款！</li>
+              <li>【警方提示】勿信虚假消息！</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 编辑模态框 -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">
+              <span class="stu-title">新增</span>学生信息
+            </h4>
+          </div>
+          <div class="modal-body stu-modal-body">
+            <div class="col-md-12">
+              <div class="col-md-4">
+                <div class="e-tr">
+                  <label class="e-td" for="">姓名</label>
+                  <input class="e-td e-input e-name" type="text" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="e-tr">
+                  <label class="e-td" for="">学号</label>
+                  <input class="e-td e-input e-sno" type="text" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="e-tr">
+                  <label class="e-td" for="">手机号</label>
+                  <input class="e-td e-input e-tel" type="text" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-4" role="form">
+                <div class="e-tr">
+                  <label class="e-td" for="">性别</label>
+                  <select id="u-select" class="e-select" style="background-color: #fff;">
+                    <option value="m">男</option>
+                    <option value="f">女</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="e-tr">
+                  <label class="e-td" for="">年龄</label>
+                  <input class="e-td e-input e-age" type="text" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="e-tr">
+                  <label class="e-td" for="">专&nbsp;&nbsp;&nbsp;&nbsp;业</label>
+                  <input class="e-td e-input e-major" type="text" placeholder="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary addEditBtn">确定</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- 删除模态框 -->
+    <div class="modal fade" id="delModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="delModalLabel">提示</h4>
+          </div>
+          <div class="modal-body">
+            <p>确定要删除吗？</p>
+            <p>此操作不可恢复</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary del-sure">确定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/Jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ls.js"></script>
+  <script src="js/json.js"></script>
+  <script src="js/index.js"></script>
+
 </html>
